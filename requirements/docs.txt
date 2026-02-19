@@ -15,3 +15,4 @@ pydantic
 # For generating argparse docs.
 # Adding requirements here should only be used as a last resort.
 msgspec  # Need for multiple inheritance involving msgspec.Struct
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
