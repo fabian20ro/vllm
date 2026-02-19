@@ -1,7 +1,7 @@
 # Common dependencies
 -r common.txt
 
-setuptools==77.0.3 # this version can reuse CMake build dir
+setuptools==78.1.1 # this version can reuse CMake build dir
 
 numba == 0.61.2; platform_machine != "s390x" # Required for N-gram speculative decoding
 
@@ -20,3 +20,8 @@ intel-openmp==2024.2.1; platform_machine == "x86_64"
 
 # Use this to gather CPU info and optimize based on ARM Neoverse cores
 py-cpuinfo; platform_machine == "aarch64"
+numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=10.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.46.2 # not directly required, pinned by Snyk to avoid a vulnerability
